@@ -1,0 +1,30 @@
+{
+  "name": "qjade",
+  "version": "0.0.1",
+  "description": "A wrapper for jade templates to add transparent support for promise locals, among other things",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap ./test"
+  },
+  "dependencies": {
+    "q": "*",
+    "jade": "*",
+    "smartclass": "*",
+    "mkdirp": "*",
+    "findit": "*"
+  },
+  "devDependencies": {
+    "tap": "*",
+    "temp": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shib71/qjade.git"
+  },
+  "author": "Blair McKenzie",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/shib71/qjade/issues"
+  }
+}
