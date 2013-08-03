@@ -1,6 +1,6 @@
 {
   "name": "qjade",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A wrapper for jade templates to add transparent support for promise locals, among other things",
   "main": "index.js",
   "scripts": {

@@ -17,6 +17,9 @@ module.exports = Template = smartclass.extendWith("Template",{
     this.debug = config.debug === true;
   },
   render : function(locals){
+    return this.renderStatic(locals);
+  },
+  renderStatic : function(locals){
     if (this._fn)
       return this._fn(locals);
     else
