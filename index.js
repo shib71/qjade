@@ -111,11 +111,11 @@ module.exports = Template = smartclass.extendWith("Template",{
           compileDebug : this._debug,
           filename : this._jadepath
         });
-        
+
         if (!fs.existsSync(path.dirname(this._staticpath)))
             mkdirp.sync(path.dirname(this._staticpath));
         
-        fs.writeFileSync(this._staticpath,"var jade = jade || {}; module.exports = " + fn.toString());
+        fs.writeFileSync(this._staticpath,"var jade = window ? window.jade : (jade || {}); module.exports = " + fn.toString());
       }
     }
   },
